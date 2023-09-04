@@ -21,6 +21,8 @@
   "window.zoomLevel": 1,
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "workbench.editor.showTabs": true,
+  "zenMode.hideTabs": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     // Go to Definition
     {
