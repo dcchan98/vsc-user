@@ -26,8 +26,16 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // Go to Definition
     {
-      "before": ["leader", "d"],
+      "before": ["g", "d"],
       "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
     // splits
     { "before": ["leader", "v"], "commands": [":vsplit"] },
