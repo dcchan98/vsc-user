@@ -17,5 +17,5 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
-  }
+  },
 ]
