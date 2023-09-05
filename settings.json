@@ -37,7 +37,8 @@
       "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
-
+    // format document
+    { "before": ["leader", "b"], "commands": ["editor.debug.action.toggleBreakpoint"] },
     // format document
     { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
     // splits
@@ -88,6 +89,9 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
   ],
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
