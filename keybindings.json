@@ -1,6 +1,6 @@
 [
   {
-    "key": "cmd+`",
+    "key": "cmd+shift+j",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
