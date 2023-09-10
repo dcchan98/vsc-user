@@ -32,7 +32,6 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "debug.toolBarLocation": "floating",
-  "emmet.useInlineCompletions": true,
   "files.autoSave": "afterDelay",
   "window.zoomLevel": 1,
   "vim.leader": "<Space>",
@@ -114,6 +113,4 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.showSuggestionsAsSnippets": true
 }
