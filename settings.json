@@ -31,9 +31,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "debug.toolBarLocation": "floating",
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 1,
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "workbench.editor.showTabs": true,
@@ -60,7 +58,15 @@
     // format document
     { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
     // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    {
+      "before": ["leader", "v"],
+      "commands": [
+        ":vsplit",
+        "workbench.action.focusLeftGroup",
+        "workbench.action.closeActiveEditor",
+        "workbench.action.focusRightGroup"
+      ]
+    },
     { "before": ["leader", "s"], "commands": [":split"] },
 
     // panes
@@ -112,5 +118,7 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.autofetch": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
