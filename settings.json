@@ -37,7 +37,7 @@
   "workbench.editor.showTabs": true,
   "zenMode.hideTabs": false,
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Go to Definition
+    // Go to Definitions
     {
       "before": ["g", "d"],
       "commands": ["editor.action.goToDeclaration"]
