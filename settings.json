@@ -30,7 +30,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "files.autoSave": "afterDelay",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
@@ -123,5 +122,10 @@
   },
   "editor.autoClosingBrackets": "never",
   "markdown.extension.preview.autoShowPreviewToSide": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "git.enableSmartCommit": true,
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "editor.autoClosingQuotes": "never",
+  "html.autoClosingTags": false
 }
