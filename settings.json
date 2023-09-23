@@ -125,7 +125,8 @@
   "window.zoomLevel": 1,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "editor.autoClosingQuotes": "never",
-  "html.autoClosingTags": false
+  "html.autoClosingTags": false,
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight"
 }
