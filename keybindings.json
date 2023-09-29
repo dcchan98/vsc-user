@@ -4,6 +4,18 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
+    "key": "cmd+shift+f",
+    "command": "find-it-faster.findWithinFiles"
+  },
+  {
+    "key": "cmd+p",
+    "command": "find-it-faster.findFiles"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
     "key": "n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus && !inputFocus"
