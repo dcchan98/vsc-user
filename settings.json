@@ -100,6 +100,14 @@
       "commands": ["editor.action.quickFix"]
     },
     {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["find-it-faster.findFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["find-it-faster.findWithinFiles"]
+    },
+    {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
     }
