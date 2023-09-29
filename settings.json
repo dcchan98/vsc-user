@@ -1,4 +1,5 @@
 {
+  "terminal.integrated.fontFamily": "MesloLGS NF",
   "explorer.confirmDelete": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -120,13 +121,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.autoClosingBrackets": "never",
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "window.zoomLevel": 1,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "git.enableSmartCommit": true,
-  "editor.autoClosingQuotes": "never",
-  "html.autoClosingTags": false,
-  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight"
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
