@@ -67,25 +67,17 @@
         "workbench.action.focusRightGroup"
       ]
     },
-    { "before": ["leader", "s"], "commands": [":split"] },
-
-    // panes
     {
       "before": ["leader", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "commands": [
+        ":split",
+        "workbench.action.focusAboveGroup",
+        "workbench.action.closeActiveEditor",
+        "workbench.action.focusRightGroup"
+      ]
     },
-    {
-      "before": ["leader", "j"],
-      "commands": ["workbench.action.focusBelowGroup"]
-    },
-    {
-      "before": ["leader", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
-    },
-    {
-      "before": ["leader", "l"],
-      "commands": ["workbench.action.focusRightGroup"]
-    },
+    { "before": ["leader", "s", "h"], "commands": [":split"] },
+    { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
     // NICE TO HAVE
     {
       "before": ["[", "d"],
