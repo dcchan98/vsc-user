@@ -35,8 +35,9 @@
   "zenMode.hideTabs": false,
 
   // vim
-
-  "vim.foldfix": true,
+  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white","vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
