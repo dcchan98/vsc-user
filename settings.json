@@ -1,152 +1,176 @@
 // https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 {
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "explorer.confirmDelete": false,
-  "editor.minimap.enabled": false,
-  "editor.quickSuggestions": {
-    "comments": "on",
-    "strings": "on",
-    "other": "on"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "files.associations": {
-    "*html": "html",
-    "*njk": "html"
-  },
-  "emmet.useInlineCompletions": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "vue-html": "html",
-    "vue": "html",
-    "razor": "html",
-    "plaintext": "pug",
-    "django-html": "html"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.showExpandedAbbreviation": "always",
-  "[less]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.autoSave": "afterDelay",
-  "workbench.editor.showTabs": true,
-  "zenMode.hideTabs": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
 
-  // vim
-  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.textColor": "white",
-  "vim.foldfix": true,
-  "vim.hlsearch": true,
-  "vim.leader": "<Space>",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    // Go to Definitions
-    {
-      "before": ["g", "d"],
-      "commands": ["editor.action.goToDeclaration"]
+    "editor.codeActionsOnSave": {
+        "source.addMissingImports": true,
+        "source.organizeImports": true
     },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
-    },
-    {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
+    "editor.formatOnSave": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 5,
+    "editor.fontWeight": "300",
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "on",
+    "editor.linkedEditing": true,
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordWrap": "on",
+    "errorLens.fontStyleItalic": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": false,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
     },
 
-    // utils
-    {
-      "before": ["leader", "i"],
-      "commands": ["extension.toggleBool"]
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        "*html": "html",
+        "*njk": "html"
     },
-    {
-      "before": ["leader", "b"],
-      "commands": ["editor.debug.action.toggleBreakpoint"]
+    "emmet.useInlineCompletions": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact",
+        "vue-html": "html",
+        "vue": "html",
+        "razor": "html",
+        "plaintext": "pug",
+        "django-html": "html"
     },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
-    {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "files.autoSave": "afterDelay",
+    "workbench.editor.showTabs": true,
+    "zenMode.hideTabs": false,
 
-    // window management: splits
-    { "before": ["leader", "s", "h"], "commands": [":split"] },
-    { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
-    {
-      "before": ["leader", "v"],
-      "commands": [
-        ":vsplit",
-        "workbench.action.focusLeftGroup",
-        "workbench.action.closeActiveEditor",
-        "workbench.action.focusRightGroup"
-      ]
-    },
-    {
-      "before": ["leader", "h"],
-      "commands": [
-        ":split",
-        "workbench.action.focusAboveGroup",
-        "workbench.action.closeActiveEditor",
-        "workbench.action.focusRightGroup"
-      ]
-    },
+    // vim
+    "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "white",
+    "vim.foldfix": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Go to Definitions
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.goToDeclaration"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
 
-    // NICE TO HAVE
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
+        // utils
+        {
+            "before": ["leader", "i"],
+            "commands": ["extension.toggleBool"]
+        },
+        {
+            "before": ["leader", "b"],
+            "commands": ["editor.debug.action.toggleBreakpoint"]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+
+        // window management: splits
+        { "before": ["leader", "s", "h"], "commands": [":split"] },
+        { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
+        {
+            "before": ["leader", "v"],
+            "commands": [
+                ":vsplit",
+                "workbench.action.focusLeftGroup",
+                "workbench.action.closeActiveEditor",
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": ["leader", "h"],
+            "commands": [
+                ":split",
+                "workbench.action.focusAboveGroup",
+                "workbench.action.closeActiveEditor",
+                "workbench.action.focusRightGroup"
+            ]
+        },
+
+        // next diagnostic
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        // Move selected lines while staying in visual mode
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+    ],
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
-    // Move selected lines while staying in visual mode
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
-  ],
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "markdown.extension.preview.autoShowPreviewToSide": true,
-  "git.enableSmartCommit": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "workbench.colorTheme": "Everforest Dark",
-  "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "window.zoomLevel": 1,
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "git.enableSmartCommit": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.colorTheme": "Everforest Dark",
+    "everforest.italicKeywords": true,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "window.zoomLevel": 1,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4
 }
