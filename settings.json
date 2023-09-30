@@ -1,3 +1,4 @@
+// https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 {
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "explorer.confirmDelete": false,
@@ -122,6 +123,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdown.extension.preview.autoShowPreviewToSide": true,
