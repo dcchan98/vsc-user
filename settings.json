@@ -52,6 +52,7 @@
 
     // vim
     "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
     "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.textColor": "white",
@@ -173,5 +174,5 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
 }
