@@ -1,7 +1,7 @@
 {
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "explorer.confirmDelete": false,
-  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": "on",
@@ -114,9 +114,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdown.extension.preview.autoShowPreviewToSide": true,
-  "window.zoomLevel": 1,
   "git.enableSmartCommit": true,
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.iconTheme": "material-icon-theme",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -124,5 +123,9 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.colorTheme": "Everforest Dark",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "window.zoomLevel": 1
 }
