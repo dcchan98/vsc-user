@@ -35,9 +35,12 @@
   "zenMode.hideTabs": false,
 
   // vim
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": true,
   "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
   "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.textColor": "white","vim.foldfix": true,
+  "vim.highlightedyank.textColor": "white",
+  "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -137,5 +140,8 @@
   "workbench.colorTheme": "Everforest Dark",
   "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
