@@ -31,10 +31,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.autoSave": "afterDelay",
-  "vim.leader": "<Space>",
-  "vim.hlsearch": true,
   "workbench.editor.showTabs": true,
   "zenMode.hideTabs": false,
+
+  // vim
+  "vim.hlsearch": true,
+  "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     // Go to Definitions
     {
@@ -49,14 +51,25 @@
       "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
-    // format document
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+
+    // utils
     {
       "before": ["leader", "b"],
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
-    // format document
     { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
-    // splits
+    {
+      "before": ["<leader>", "q", "f"],
+      "commands": ["editor.action.quickFix"]
+    },
+
+    // window management: splits
+    { "before": ["leader", "s", "h"], "commands": [":split"] },
+    { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
     {
       "before": ["leader", "v"],
       "commands": [
@@ -75,8 +88,7 @@
         "workbench.action.focusRightGroup"
       ]
     },
-    { "before": ["leader", "s", "h"], "commands": [":split"] },
-    { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
+
     // NICE TO HAVE
     {
       "before": ["[", "d"],
@@ -85,14 +97,6 @@
     {
       "before": ["]", "d"],
       "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["<leader>", "q", "f"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -126,5 +130,5 @@
   "workbench.colorTheme": "Everforest Dark",
   "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1
 }

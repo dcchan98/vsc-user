@@ -34,11 +34,14 @@
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   },
+
   // EXTRA
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
   },
+
+  // Navigation
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusLeftGroup"
