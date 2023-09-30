@@ -51,6 +51,7 @@
     "zenMode.hideTabs": false,
 
     // vim
+    "vim.sneak": true,
     "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.textColor": "white",
