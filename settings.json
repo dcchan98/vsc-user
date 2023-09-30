@@ -35,6 +35,8 @@
   "zenMode.hideTabs": false,
 
   // vim
+
+  "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -57,6 +59,10 @@
     },
 
     // utils
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    },
     {
       "before": ["leader", "b"],
       "commands": ["editor.debug.action.toggleBreakpoint"]
