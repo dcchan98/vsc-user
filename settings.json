@@ -1,7 +1,6 @@
 {
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "explorer.confirmDelete": false,
-  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": "on",
@@ -127,5 +126,5 @@
   "workbench.colorTheme": "Everforest Dark",
   "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
 }

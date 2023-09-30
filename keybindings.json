@@ -1,8 +1,7 @@
 [
-  {
-    "key": "cmd+shift+j",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
+  // Extensions
+
+  // find-it-faster # for telescope like searching
   {
     "key": "cmd+shift+f",
     "command": "find-it-faster.findWithinFiles"
@@ -11,6 +10,16 @@
     "key": "cmd+p",
     "command": "find-it-faster.findFiles"
   },
+
+  // Turbo console log
+  {
+    "key": "cmd+i",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+
+  // In built
+
+  // Toggle views
   {
     "key": "cmd+shift+j",
     "command": "workbench.action.terminal.toggleTerminal"
@@ -45,5 +54,5 @@
   {
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup"
-  },
+  }
 ]
