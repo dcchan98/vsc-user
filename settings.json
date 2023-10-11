@@ -7,13 +7,13 @@
         "source.organizeImports": true
     },
     "editor.formatOnSave": true,
-    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSmoothCaretAnimation": "off",
     "editor.cursorSurroundingLines": 5,
     "editor.fontWeight": "300",
     "editor.inlineSuggest.enabled": true,
     "editor.lineNumbers": "on",
     "editor.linkedEditing": true,
-    "editor.smoothScrolling": true,
+    "editor.smoothScrolling": false,
     "editor.stickyScroll.enabled": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordWrap": "on",
@@ -116,11 +116,11 @@
 
         // next diagnostic
         {
-            "before": ["[", "d"],
+            "before": ["leader", "d","s"],
             "commands": ["editor.action.marker.prev"]
         },
         {
-            "before": ["]", "d"],
+            "before": ["leader", "d", "d"],
             "commands": ["editor.action.marker.next"]
         }
     ],
@@ -170,9 +170,8 @@
     "everforest.italicKeywords": true,
     "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
-    "window.zoomLevel": 1,
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 4
 }
