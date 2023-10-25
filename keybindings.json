@@ -1,84 +1,89 @@
 // https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 [
-  // Extensions
+    // Extensions
 
-  // find-it-faster # for telescope like searching
-  {
-    "key": "cmd+shift+f",
-    "command": "find-it-faster.findWithinFiles"
-  },
-  {
-    "key": "cmd+p",
-    "command": "find-it-faster.findFiles"
-  },
+    // find-it-faster # for telescope like searching
+    {
+        "key": "cmd+shift+f",
+        "command": "find-it-faster.findWithinFiles"
+    },
+    {
+        "key": "cmd+p",
+        "command": "find-it-faster.findFiles"
+    },
 
-  // Turbo console log
-  {
-    "key": "cmd+i",
-    "command": "turboConsoleLog.displayLogMessage"
-  },
+    // Turbo console log
+    {
+        "key": "cmd+i",
+        "command": "turboConsoleLog.displayLogMessage"
+    },
 
-  // In built
+    // In built
 
-  // Toggle views
-  {
-    "key": "cmd+shift+j",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  // file management
+    // Toggle views
+    {
+        "key": "cmd+shift+j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // file management
 
-  {
-    "key": "shift+a",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
-  },
-  {
-    "key": "a",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "renameFile",
-    "key": "c",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "filesExplorer.copy",
-    "key": "y",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "filesExplorer.paste",
-    "key": "p",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "deleteFile",
-    "key": "x",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
+    {
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "renameFile",
+        "key": "c",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.copy",
+        "key": "y",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.paste",
+        "key": "p",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "deleteFile",
+        "key": "x",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
 
-  // EXTRA
-  {
-    "key": "ctrl+z",
-    "command": "workbench.action.toggleZenMode"
-  },
+    // EXTRA
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.toggleZenMode"
+    },
 
-  // Navigation
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusRightGroup"
-  }
+    // Navigation
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-extension.vim_cmd+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
+    }
 ]

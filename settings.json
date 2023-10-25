@@ -79,6 +79,7 @@
         },
 
         // utils
+        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
         {
             "before": ["leader", "i"],
             "commands": ["extension.toggleBool"]
