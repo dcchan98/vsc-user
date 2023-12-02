@@ -1,17 +1,6 @@
 // https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 [
     // Extensions
-
-    // find-it-faster # for telescope like searching
-    {
-        "key": "cmd+shift+f",
-        "command": "find-it-faster.findWithinFiles"
-    },
-    {
-        "key": "cmd+p",
-        "command": "find-it-faster.findFiles"
-    },
-
     // Turbo console log
     {
         "key": "cmd+i",

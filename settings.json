@@ -47,8 +47,7 @@
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showExpandedAbbreviation": "always",
     "files.autoSave": "afterDelay",
-    "workbench.editor.showTabs": true,
-    "zenMode.hideTabs": false,
+    "workbench.editor.showTabs": "multiple",
 
     // vim
     "vim.sneak": true,
@@ -79,7 +78,10 @@
         },
 
         // utils
-        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+        {
+            "before": ["leader", "p"],
+            "commands": ["editor.action.formatDocument"]
+        },
         {
             "before": ["leader", "i"],
             "commands": ["extension.toggleBool"]
@@ -117,11 +119,11 @@
 
         // next diagnostic
         {
-            "before": ["leader", "d","s"],
+            "before": ["g", "E"],
             "commands": ["editor.action.marker.prev"]
         },
         {
-            "before": ["leader", "d", "d"],
+            "before": ["g", "e"],
             "commands": ["editor.action.marker.next"]
         }
     ],
@@ -174,5 +176,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "git.confirmSync": false
 }
