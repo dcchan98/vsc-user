@@ -1,5 +1,9 @@
 // https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 [
+    {
+        "key": "shift shift",
+        "command": "workbench.action.showCommands"
+    },
     // Extensions
     // Turbo console log
     {

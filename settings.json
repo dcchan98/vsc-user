@@ -3,8 +3,8 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
 
     "editor.codeActionsOnSave": {
-        "source.addMissingImports": true,
-        "source.organizeImports": true
+        "source.addMissingImports": "explicit",
+        "source.organizeImports": "explicit"
     },
     "editor.formatOnSave": true,
     "editor.cursorSmoothCaretAnimation": "off",
@@ -169,7 +169,6 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "workbench.colorTheme": "Everforest Dark",
     "everforest.italicKeywords": true,
     "editor.fontFamily": "CaskaydiaCove Nerd Font,Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
@@ -177,5 +176,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "prettier.tabWidth": 4,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "window.zoomLevel": 1,
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none"
 }
