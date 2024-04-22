@@ -61,6 +61,14 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         // Go to Definitions
         {
+            "before": ["g", "f"],
+            "commands": ["workbench.action.navigateForward"]
+        },
+        {
+            "before": ["g", "b"],
+            "commands": ["workbench.action.navigateBack"]
+        },
+        {
             "before": ["g", "d"],
             "commands": ["editor.action.goToDeclaration"]
         },
