@@ -50,13 +50,6 @@
         "key": "x",
         "when": "filesExplorerFocus && !inputFocus"
     },
-
-    // EXTRA
-    {
-        "key": "ctrl+z",
-        "command": "workbench.action.toggleZenMode"
-    },
-
     // Navigation
     {
         "key": "ctrl+h",
@@ -78,5 +71,26 @@
         "key": "cmd+c",
         "command": "-extension.vim_cmd+c",
         "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
+    },
+    // Only for windows
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
     }
 ]
