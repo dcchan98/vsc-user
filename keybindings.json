@@ -1,6 +1,11 @@
 // https://www.youtube.com/watch?v=ICj7TnyDCiw&t=219s
 [
     {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "editorFocus != true"
+    },
+    {
         "key": "shift shift",
         "command": "workbench.action.showCommands"
     },
@@ -10,16 +15,13 @@
         "key": "cmd+i",
         "command": "turboConsoleLog.displayLogMessage"
     },
-
     // In built
-
     // Toggle views
     {
         "key": "cmd+shift+j",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     // file management
-
     {
         "key": "shift+a",
         "command": "explorer.newFolder",
